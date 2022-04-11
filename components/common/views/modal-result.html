@@ -1,0 +1,18 @@
+ 
+    <div class="modal-content" >
+      <div class="modal-header  {{resultCss}}">
+        <button class="close" style="font-weight:bold" ></button>
+        <h4 class="modal-title" ><i class="fa {{resultIcon}}"></i> {{result.title}}</h4>		
+      </div>
+	  
+      <div class="modal-body">
+        <p class="{{resultMsgCss}}">{{result.message}} </p>
+      </div>
+	  
+      <div class="modal-footer ">
+         <button  data-dismiss="modal" class="btn btn-primary btn-success" ng-show="result.showYesBtn" ng-click="this[result.method]();this[result.methodCancel]()" >Ok</button>
+		 <button  class="btn btn-primary btn-danger" ng-show="result.showNoBtn"  ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+ 
+  

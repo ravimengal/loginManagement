@@ -1,0 +1,84 @@
+ 
+
+ <style>
+.selectedIndex {
+  background:  #b3d1ff;
+}
+
+.att{
+padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+	flex-direction: row !important;
+      align-items: stretch !important;
+     display: inline-flex !important;
+
+
+}
+
+.thumbb{
+align-items: center !important;
+justify-content: center !important;
+
+display: inline-block;
+    margin-right: 10px;
+
+}
+
+</style>
+<!-- Site Setting Panel End -->
+<div  cg-busy="promise" data-ng-controller="OrgController" id="OrgController" ng-init="getOrgList()" >
+<!-- Page Header Start -->
+<div class="pageheader"  >
+  <h2><i class="fa fa-university"></i>Select Organization</h2>
+  <div class="breadcrumb-wrapper hidden-xs pull-left"> <span class="label"></span>
+    <ol class="breadcrumb">
+	     
+    
+    </ol>
+  </div>
+</div>
+<!-- Page Header End -->
+
+<div class="page">
+       <div class="well"> 
+
+<div class="row">
+    
+	    
+	   <div> 
+ 
+        <div class="panel-body" style="padding:5px;">	
+        <input type="text" class="form-control" placeholder="Search..." data-ng-model="query"> 	   
+		   
+        </div>
+      </div>  
+	<div > 
+ 
+        <div class="panel-body" data-slim-scroll data-scroll-height="300px" style="padding:5px;">	
+       
+		    <div class="table-responsive"  >
+			 		
+            <table class="table" style="margin-bottom: 0px;" >
+              <thead>
+              
+              </thead>
+              <tbody  data-ng-repeat="org in societylist|filter:query" >			 
+                <tr >                              
+                  <td class="h5" ><i class="fa fa-building"></i><a href="javascript:void(0)" ng-click="changeOrg(org.orgID,org.orgName,org.uri,'','')"> {{org.orgName}}</a></td>
+                  <td class="hidden-xs"><label class="ui-checkbox" ng-click="changeOrg(org.orgID,org.orgName,org.uri,'','')">
+                      <input name="checkbox1" type="checkbox" value="option1">
+                      <span></span></label></td>      
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>  
+	
+
+                        </div>
+    
+      </div>

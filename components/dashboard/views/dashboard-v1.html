@@ -1,0 +1,1261 @@
+
+
+<style>
+.panel-body{padding:15px;}
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+input.ng-dirty.ng-invalid {
+    border:1px solid Red;
+}
+input.ng-dirty.ng-valid {
+    border:1px solid green;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.footer {
+ background-color: #34495e;
+    color: #f5f6f7;
+
+/*	
+  position: absolute;	
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here *
+  height: 70px;
+  line-height: 50px; /* Vertically center the text there **/
+ 
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  
+}
+
+.footer:before {
+    clear: both;
+}
+.footer:after {
+    clear: both;
+}
+
+
+/*!
+ * Yamm! - Yet another megamenu for Bootstrap*/
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+
+.yamm .dropdown-menu {
+  left: auto;  
+  min-width:15rem;
+}
+
+.yamm .yamm-content {
+  padding: 1rem;
+  /*border :7px solid #e9ecef;*/
+  background-color:#fff;
+  
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu,
+.yamm .dropup.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+
+.yamm-content ul>li>a>i {
+   display: inline-block;
+    margin-right: 15px;
+    width: 20px;
+    line-height: 1;
+    text-align: center;
+    font-size: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+   }
+
+
+
+/***********Updated***********/
+
+.dropdown-menu:li {
+    text-align: left;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu,
+.navbar-nav .dropdown .dropdown-menu:hover {
+   display: block;
+    margin-top: 0; 	
+	top:65px;
+ }
+ 
+  .navbar-nav {
+  	max-height:400px;
+	overflow-y: auto;
+  }
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 350px) {  
+
+   #navbarTogglerDemo02 .wd-500 {
+  	 width:300px!important;
+   }
+  
+   #navbarTogglerDemo02 .wd-360 {
+  	  width:100%!important;
+   }
+   
+    #navbarTogglerDemo02 .wd-380 {
+  	  width:100%!important;
+   }
+   
+   .navbar-nav .yamm-content ul li p {
+	   padding-top:10px
+   }
+}
+ 
+
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+#navbarTogglerDemo02 .wd-500 {
+  	 width:500px!important;
+   }
+  
+   #navbarTogglerDemo02 .wd-360 {
+  	 width:360px!important;
+   }
+   
+    #navbarTogglerDemo02 .wd-380 {
+  	 width:380px!important;
+   }
+ 
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+#navbarTogglerDemo02 .wd-500 {
+  	 width:500px!important;
+   }
+  
+   #navbarTogglerDemo02 .wd-360 {
+  	 width:360px!important;
+   }
+   
+    #navbarTogglerDemo02 .wd-380 {
+  	 width:380px!important;
+   }
+ 
+   .navbar-nav .yamm-content ul li p {
+	   padding-top:0px
+   }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+#navbarTogglerDemo02 .wd-500 {
+  	 width:500px!important;
+   }
+  
+   #navbarTogglerDemo02 .wd-360 {
+  	 width:360px!important;
+   }
+   
+    #navbarTogglerDemo02 .wd-380 {
+  	 width:380px!important;
+   }
+    
+	  .navbar-nav .yamm-content ul li p {
+	   padding-top:0px
+   }
+}
+ 
+
+
+/***********Horizonatal menu ***********/ 
+.dropdown-border{
+	border: 7px solid #e9ecef;
+}
+ 
+.navbar-nav .yamm-content ul a {
+    font-size: 13px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#007bb9;
+   }
+
+.navbar-nav .yamm-content ul li p {
+    font-size: 16px;
+	color:#59575c;
+   } 
+   
+.navbar-nav .nav-item.active,
+.navbar-nav .nav-item:hover {	      
+      border-top: 3px solid #007bb9;
+	 background-color:#e9ecef ;	
+}
+.navbar-nav .nav-item.active,
+.navbar-nav .nav-link:hover {	      
+    color:#007bb9!important;
+}
+
+.navbar-nav .nav-link {	      
+    color:#007bb9!important;
+}
+
+.navbar-brand>img {
+  height: 60px;
+  padding: 0px 15px;
+  width: auto;
+}
+
+.text-purple{
+	color:#883997;
+}
+
+.text-cyan{
+	color:#4bacb8;
+}
+
+.text-lightgreen{
+	color:#7da453;
+}
+
+.text-amber{
+	color:#ffd54f;
+}
+
+.text-orange{
+	color:#f4511e;
+}
+
+.text-brown{
+	color:#795548;
+}
+
+.text-indigo{
+	color:#3f51b5;
+}
+
+.text-pink{
+	color:#880E4F;
+}
+
+.text-limelight{
+	color:#CDDC39;
+}
+
+.bg-cirrus {
+    background-color: #215ca0;
+}
+
+.bg-air {
+    background-color: #c2e8ff;
+}
+
+.pr-5, .px-5 {
+    padding-right: 6rem!important;
+}
+
+.section{
+    padding: 40px 0;
+}
+.details-card {
+	background: #ecf0f1;
+}
+
+.bg-card{
+	background-color: #ecf0f1;
+}
+.bg-blue{
+	background-color:#007bff;
+}
+
+.card-content {
+	background: #ffffff;
+	border: 4px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.card-img span {
+	position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #1ABC9C;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+        font-size: 12px;
+        margin:0;
+        padding:10px 5px;
+         line-height: 0;
+}
+.card-desc {
+	padding: 1.25rem;
+}
+
+.card-desc h3 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+	color: #747373;
+    font-size: 14px;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.header-text-line {
+    overflow: hidden;
+    display: block;
+}
+.nb-list-group{
+	background-color:#ecf0f1;
+	border:0;
+}
+.nb-list-group i{
+	padding-right:10px;
+	vertical-align:middle;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.nb-list-group p{
+	font-size: 13px!important;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+/* home-area styles
+-------------------------------------------------- */
+
+.home-area {
+	background-position: top center  ;
+	 background-image: url(../images/product-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+	height: 88vh;
+	width: 100%;
+	position: relative;
+	
+}
+
+.text-size-legal {
+    font-size: 13px!important;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.7;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#client-testimonial-carousel .carousel-indicators li{
+    background-color: #215ca0;
+	padding:.24rem;
+}
+#client-testimonial-carousel .carousel-indicators .active {
+    background-color: #007bff;
+	padding:.24rem;
+}
+
+#finance360-card .card {
+    border: 0px;
+	background-color:transparent;
+}
+#finance360-card .card .card-body:hover {
+ background-color: #fff;	
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+  transition: all 0.3s ease;
+}
+
+#finance360-card .card-body {
+    -webkit-box-flex: 1;
+	flex: 0 0 auto;
+     padding: 1.25rem;
+}
+
+
+
+.margin--30-top-lg {
+    margin-top: -130px;	
+}
+.img-bleed-right {
+    max-width: inherit;
+}
+
+
+/* product-area styles
+-------------------------------------------------- */
+
+.product-area {
+   background-position: top center;
+    background-image: url(../images/bg-product.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+	width: 100%;
+	position: relative;
+}
+
+#products-overview .card {
+    background-color: #f4f4f4;
+	border:0;
+}
+
+.product-divider{
+	height: 1px;
+    width: 20%;
+	background-color: #c1b9b4;
+	margin:0;
+	
+}
+
+.text-blue{
+	color:#032e61;
+	font-weight:bold;
+}
+
+
+/* accounting-area styles
+-------------------------------------------------- */
+
+.kpi .num {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #0077c8;
+}
+
+.ia-db {
+    display: block !important;
+}
+
+.kpi .row > div {
+    border-right: 1px solid #d7d7d7;
+}
+.kpi .row > div:last-child {
+    border-right: none;
+}
+
+.kpi .span3 {
+   margin-right:0px;
+}
+
+.kpi.num sub {
+    bottom: -0.25em;
+	font-weight: 400;
+    font-size: 60%;
+}
+
+.kpi .row > div p {
+    margin-bottom: 0;
+    font-size: 20px;
+	margin-top:10px;
+}
+
+/* expense-area styles
+-------------------------------------------------- */
+
+.bg-expense-area {
+ 	background-color:#ede1cf;
+	
+}
+
+.tooltip-inner{
+	font-size:0.7rem;
+}
+
+
+/* login-page styles
+-------------------------------------------------- */
+ .card-custom {
+        width: 160px;
+ }
+
+
+/* Start Blog Area css
+============================================================================================ */
+
+.blog_left_sidebar .blog_details{
+	 box-shadow: none;
+    padding: 0;
+	padding-top:35px;
+}
+
+.single-post-area .blog_details {
+	
+    box-shadow: none;
+    padding: 0;
+	padding-top:26px;
+}
+
+.blog-bg{
+	background-image:url(../images/blog/industries_hero.jpg);
+	min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blog_right_sidebar .widget_title {
+  font-size: 20px;
+  margin-bottom: 40px; }
+  .blog_right_sidebar .widget_title::after {
+    content: "";
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #b9c5c7; }
+
+.blog_right_sidebar .single_sidebar_widget {
+  background: #ecf0f1;
+  padding: 30px;
+  margin-bottom: 30px; }
+  .blog_right_sidebar .single_sidebar_widget .btn_1 {
+    margin-top: 0px; }
+
+.blog_right_sidebar .search_widget .form-control {
+  height: 50px;
+  border-color: #ecf0f1;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 20px;
+  border-radius: 0;
+  border-right: 0; }
+  .blog_right_sidebar .search_widget .form-control::placeholder {
+    color: #999999; }
+  .blog_right_sidebar .search_widget .form-control:focus {
+    border-color: #b9c5c7;
+    outline: 0;
+    box-shadow: none; }
+
+.blog_right_sidebar .search_widget .input-group button {
+  background: #f27420;
+  border-left: 0;
+  border: 1px solid #b9c5c7;
+  padding: 4px 15px;
+  border-left: 0;
+  cursor: pointer; }
+  .blog_right_sidebar .search_widget .input-group button i {
+    color: #fff; }
+  .blog_right_sidebar .search_widget .input-group button span {
+    font-size: 14px;
+    color: #999999; }
+
+.blog_right_sidebar .newsletter_widget .form-control {
+  height: 50px;
+  border-color: #b9c5c7;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 20px;
+  border-radius: 0; }
+  .blog_right_sidebar .newsletter_widget .form-control::placeholder {
+    color: #999999; }
+  .blog_right_sidebar .newsletter_widget .form-control:focus {
+    border-color: #b9c5c7;
+    outline: 0;
+    box-shadow: none; }
+
+.blog_right_sidebar .newsletter_widget .input-group button {
+  background: #fff;
+  border-left: 0;
+  border: 1px solid #ecf0f1;
+  padding: 4px 15px;
+  border-left: 0; }
+  .blog_right_sidebar .newsletter_widget .input-group button i,
+  .blog_right_sidebar .newsletter_widget .input-group button span {
+    font-size: 14px;
+    color: #fff; }
+
+.blog_right_sidebar .post_category_widget .cat-list li {
+  border-bottom: 1px solid #b9c5c7;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 12px; }
+  .blog_right_sidebar .post_category_widget .cat-list li:last-child {
+    border-bottom: 0; }
+  .blog_right_sidebar .post_category_widget .cat-list li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888; }
+    .blog_right_sidebar .post_category_widget .cat-list li a p {
+      margin-bottom: 0px; }
+  .blog_right_sidebar .post_category_widget .cat-list li + li {
+    padding-top: 15px; }
+
+.blog_right_sidebar .popular_post_widget .post_item .media-body {
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px; }
+  .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3s linear; }
+  .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
+    color: #fff; }
+  .blog_right_sidebar .popular_post_widget .post_item .media-body p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0px; }
+
+.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+  margin-top: 20px; }
+
+.blog_right_sidebar .tag_cloud_widget ul li {
+  display: inline-block; }
+  .blog_right_sidebar .tag_cloud_widget ul li a {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: all 0.3s ease 0s;
+    color: #888888;
+    font-size: 13px; }
+    .blog_right_sidebar .tag_cloud_widget ul li a:hover {
+      background: #f27420;
+      color: #fff !important;
+      -webkit-text-fill-color: #fff;
+      text-decoration: none;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+
+.blog_right_sidebar .instagram_feeds .instagram_row {
+  display: flex;
+  margin-right: -6px;
+  margin-left: -6px; }
+  .blog_right_sidebar .instagram_feeds .instagram_row li {
+    width: 33.33%;
+    float: left;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-bottom: 15px; }
+
+.blog_right_sidebar .br {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 30px 0px; }
+
+.blog-pagination {
+  margin-top: 80px; }
+
+.blog-pagination .page-link {
+  font-size: 14px;
+  position: relative;
+  display: block;
+  padding: 0;
+  text-align: center;
+  margin-left: -1px;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 0 !important;
+  color: #8a8a8a;
+  border: 1px solid #f0e9ff;
+  margin-right: 10px; }
+  .blog-pagination .page-link i,
+  .blog-pagination .page-link span {
+    font-size: 13px; }
+
+.blog-pagination .page-item.active .page-link {
+  background-color: #fbf9ff;
+  border-color: #f0e9ff;
+  color: #888888; }
+
+.blog-pagination .page-item:last-child .page-link {
+  margin-right: 0; }
+
+
+
+.single-post-area .quote-wrapper {
+  background: rgba(130, 139, 178, 0.1);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .single-post-area .quote-wrapper {
+      padding: 30px; } }
+
+.single-post-area .quotes {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+  border-left: 2px solid; }
+  @media (min-width: 768px) {
+    .single-post-area .quotes {
+      padding: 25px 25px 25px 30px; } }
+	  
+	  
+	  
+
+.blog-entry {
+  width: 100%;
+  margin-bottom: 2em; }
+  .blog-entry .img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+    @media (max-width: 767.98px) {
+      .blog-entry .img {
+        margin: 0 auto;
+        margin-bottom: 20px; } }
+  .blog-entry .text {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    width: calc(100% - 150px); }
+    @media (max-width: 767.98px) {
+      .blog-entry .text {
+        width: 100%;
+        text-align: center; } }
+    .blog-entry .text h3 {
+      font-weight: 400;
+      font-size: 30px; }
+      .blog-entry .text h3 a {
+        color: #000000; }
+    .blog-entry .text .meta-wrap {
+      width: 100%;
+      display: block; }
+      .blog-entry .text .meta-wrap .meta span {
+        font-size: 14px;
+        margin: 0 10px 0 0;
+        color: #bfbfbf; }
+        .blog-entry .text .meta-wrap .meta span a {
+          color: #000000; }
+
+.blog-entry-2 {
+  margin-bottom: 6em; }
+  .blog-entry-2 .img {
+    display: block;
+    height: 400px; }
+    .blog-entry-2 .img.img-2 {
+      height: 300px; }
+  .blog-entry-2 .text {
+    position: relative;
+    z-index: 0; }
+    .blog-entry-2 .text h3 {
+      font-weight: normal;
+      font-size: 32px; }
+      .blog-entry-2 .text h3 a {
+        color: #000000; }
+    .blog-entry-2 .text .meta-wrap {
+      width: 100%;
+      display: block; }
+      .blog-entry-2 .text .meta-wrap .half {
+        width: 50%; }
+      .blog-entry-2 .text .meta-wrap .meta span {
+        margin: 0 5px;
+        color: #b3b3b3; }
+        .blog-entry-2 .text .meta-wrap .meta span i {
+          margin-right: 10px; }
+  .blog-entry-2 .author .img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .blog-entry-2 .author .info {
+    width: calc(100% - 80px); }
+    .blog-entry-2 .author .info h3 {
+      font-size: 20px;
+      margin-bottom: 0;
+      font-weight: 400; }
+      .blog-entry-2 .author .info h3 a {
+        font-weight: 600;
+        color: #000000;
+        text-decoration: underline; }
+      .blog-entry-2 .author .info h3 span {
+        color: #000000; }
+  .blog-entry-2 .author span {
+    font-size: 18px;
+    color: #b3b3b3; }
+  .blog-entry-2 .text-2 .big {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    font-size: 60px;
+    font-family: "Lora", Arial, serif;
+    line-height: .8;
+    z-index: -1;
+    color: #ebebeb; }
+  .blog-entry-2 .text-2 h3 {
+    font-size: 24px;
+    font-weight: 600; }
+  .blog-entry-2 .author .img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .blog-entry-2 .author .info {
+    width: calc(100% - 60px); }
+    .blog-entry-2 .author .info h3 {
+      font-size: 18px; }
+  .blog-entry-2 .author span {
+    font-size: 16px; }
+
+.img,
+.blog-img,
+.insta-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+	  	  
+.blog-divider{
+	height: 1px;
+    width: 100%;
+	background-color: #c1b9b4;
+	margin-bottom: 2em; 	
+}		  
+
+.metrix-text{
+	font-size: 85px;
+    line-height: 85px;
+    height: 85px;
+}
+
+.bg-banking-area {
+ 	background-color:#50d5b7;
+	
+}
+
+.text-bold{
+font-weight:bold;	
+}
+
+.ui-radio {
+    position: relative;
+    margin: 0 20px 10px;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.ui-radio input[type=radio]+span:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.ui-radio input[type=radio]+span {
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.ui-radio input[type=radio] {
+    display: none;
+}
+
+.ui-radio input[type=radio]:checked+span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: -14px;
+    background-color: #25a79f;
+    border-radius: 50%;
+    display: block;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-custom {
+    width: 160px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.ml-2, .mx-2 {
+    margin-left: 0.5rem!important;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+</style>
+
+<!-- Page Header Start -->
+<div class="pageheader">
+  <h2> Business Workspace</h2>
+
+  <div class="breadcrumb-wrapper hidden-xs"> 
+    <ol class="breadcrumb">
+      
+    </ol>
+  </div>
+</div>
+<!-- Page Header End -->
+<div class="page" ng-controller="AppCtrl" ng-init="getDashboardApp()">
+
+<div class="row">
+    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12" ng-repeat="app in appList">
+<a href="https://{{app.domain}}/{{app.appName}}" target="_blank" data-trigger="hover" title="Multi Currency core accounting solution to close your business finance." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-xs-3">
+            <div class="counter-icon bg-success"> <i class="fa fa-users"></i> </div>          
+          </div>
+          <div class="col-xs-9 text-left">
+            <h3>{{app.appName}}</h3>
+            <p class="text-muted nm">{{app.description}}</p>
+          </div>
+        </div>
+      </div></a>
+    </div>
+              </div>
+
+ <!--<div class="col-md-12">
+ 
+ 
+ <div class="row mt-5 ">
+      
+        <div class="card card-custom  mx-2 mb-3">
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-file-invoice text-success fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/invoicingapp" data-trigger="hover" target="_blank" title="Create a Multi Currency Tax invoices with integrated Payment options for your customers." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Invoicing</a>				
+				</h5>
+              </div>
+        </div>
+	
+        <div class="card card-custom   mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-file-alt text-danger fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/finliteapp" target="_blank" data-trigger="hover" title="Multi Currency core accounting solution to close your business finance." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Accounting</a>				
+				</h5>
+              </div>
+        </div>
+		
+	     <div class="card card-custom  mx-2 mb-3">
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-university text-amber fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/bankxapp" target="_blank" data-trigger="hover" title="Integrated banking for all your banking transaction needs across multiple banks." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Banking</a>				
+				</h5>
+              </div>
+        </div>
+		
+        <div class="card card-custom   mx-2 mb-3">
+             <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-file-alt text-warning  fa-4x"></i>	</div>
+				<h5 class="card-title">
+					<a href="https://www.financeflo.com/in/expenseliteapp" target="_blank" data-trigger="hover" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Expense Management integrated with Expense &amp; Travel cards.">
+					   Expenses			
+					</a>
+				</h5>
+              </div>
+        </div>
+        <div class="card card-custom  mx-2 mb-3">
+           <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-cube text-purple  fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/assetliteapp" target="_blank" data-trigger="hover" title="Assets and Depreciation Management system." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Assets</a>				
+				</h5>
+              </div>
+        </div>
+        <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-2"><i class="fas fa-cubes text-cyan  fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/inventoryliteapp" target="_blank" data-trigger="hover" title="Smart Management for your inventory and ordering." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Inventory</a>				
+				</h5>
+              </div>
+        </div>
+         <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-2"><i class="fas fa-money-bill text-lightgreen  fa-4x"></i>	</div>
+                <h5 class="card-title ">
+				<a href="https://www.financeflo.com/in/expenseliteapp" target="_blank" data-trigger="hover" title="Purchase &amp; Expense requisition management with approval workflows." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Requisitions</a>				
+				</h5>
+              </div>
+        </div>
+		
+		  <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-money-check text-orange  fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Create employee payroll statements with bulk auto payouts." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Payroll</a>				
+				</h5>
+              </div>
+        </div>
+		
+		
+		  <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-coins text-brown  fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Manage &amp; control your cash flow and working capital needs.">Treasury</a>				
+				</h5>
+              </div>
+        </div>
+		
+		  <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-university text-indigo fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Project accounting and Profitability tracking." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Projects</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card card-custom  mx-2 mb-3">
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-balance-scale text-pink fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Manage budgets and track variance reports.">Budgets &amp; Forecasting</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-chart-bar text-limelight fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="In depth insights &amp; Dashboards for data driven decision making." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Analytics</a>				
+				</h5>
+              </div>
+        </div>
+		
+		
+		 <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-percentage text-orange  fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="GST and TDS reporting and automations. " data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Tax</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-book text-amber fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Audit" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Audit</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-print text-success fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Compliance Management as per company's act. " data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Compliance</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-shield-alt text-info fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/iamliteapp" data-trigger="hover" target="_blank" title="Enhanced bank level security for your organization." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Security</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-cogs text-indigo fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/myakountant" target="_blank" data-trigger="hover" title="Accounting services for your organization." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">CA Services</a>				
+				</h5>
+              </div>
+        </div>
+			<div class="card card-custom  mx-2 mb-3">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-cogs text-indigo fa-4x"></i>	</div>
+                <h5 class="card-title">
+				<a href="http://localhost/demoapp/#/" target="_self" data-trigger="hover" title="demo app." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Demo app</a>				
+				</h5>
+              </div>
+        </div>
+    </div>-->
+ <!-- <div class="row">
+  
+    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-success"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><sapn ng-click="getAllOpen()" >{{totalopen}}</span></div>
+          <div class="widgetbox-title">Open Requests</div>
+          <div class="widgetbox-subtitle">in your society </div>
+        </div>
+      </div>
+    </div>
+	
+	 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-danger"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><span ng-click="getAllOpen()" >{{totaloverdue}}</span></div>
+          <div class="widgetbox-title">OverDue Requests</div>
+          <div class="widgetbox-subtitle">that needs your urgent attention</div>
+        </div>
+      </div>
+    </div>	
+	
+		 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-danger"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><span ng-click="getAllOpen()" >{{totaloverdue}}</span></div>
+          <div class="widgetbox-title">OverDue Requests</div>
+          <div class="widgetbox-subtitle">that needs your urgent attention</div>
+        </div>
+      </div>
+    </div>	
+	
+		 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-danger"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><span ng-click="getAllOpen()" >{{totaloverdue}}</span></div>
+          <div class="widgetbox-title">OverDue Requests</div>
+          <div class="widgetbox-subtitle">that needs your urgent attention</div>
+        </div>
+      </div>
+    </div>	
+	
+		 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-danger"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><span ng-click="getAllOpen()" >{{totaloverdue}}</span></div>
+          <div class="widgetbox-title">OverDue Requests</div>
+          <div class="widgetbox-subtitle">that needs your urgent attention</div>
+        </div>
+      </div>
+    </div>	
+	
+		 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <div class="widgetbox widgetbox-default widgetbox-item-icon">
+        <div class="widgetbox-item-left widgetbox-icon-danger"> <span class="fa fa-envelope"></span> </div>
+        <div class="widgetbox-data">
+          <div class="widgetbox-int"><span ng-click="getAllOpen()" >{{totaloverdue}}</span></div>
+          <div class="widgetbox-title">OverDue Requests</div>
+          <div class="widgetbox-subtitle">that needs your urgent attention</div>
+        </div>
+      </div>
+    </div>	
+	 
+
+  </div> -->
+  
+  </div>
+
+
+
+
+ 
+  
+ </div>
+ 
+ 
+

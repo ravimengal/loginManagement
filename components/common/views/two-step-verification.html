@@ -1,0 +1,40 @@
+
+<!-- login header -->
+<header data-ng-controller="HeaderCtrl" data-ng-include=" '/components/common/views/login-header.html' " id="login-header" class="header-container {{admin.navbarHeaderColor}}" > </header>
+
+<div cg-busy="promise" class="lock-wrapper" data-ng-controller="LoginController">
+  <div class="panel lock-box">
+     <h4> 2-Step Verification</h4>
+    <p class="text-center text-small">Please enter the 6-digit code we sent via Email & SMS</p>
+    <div class="row " ng-init="initOTP()">
+      <form name="OTPForm" class="form-inline  " role="form" novalidate >
+        <div class="form-group  col-md-12 col-sm-12 col-xs-12">
+          <!--<div class="iconic-input right ">
+            <label for="signinInputOTP" class="text-muted">One Time Password</label>
+            <input id="signinInputOTP" name="signinInputOTP"  type="text"  ng-model="loginOTP" ng-pattern="/^[0-9]+$/" minlength="6" maxlength="6" class="form-control padding-horizontal-15" required />
+            <i class="fa fa-lock"></i>
+			
+        </div>-->
+		<div class="dl-horizontal pt-10 " >
+           <input type="text" id="opt1" name="opt1" ng-set-focus="opt1" set-focus-default ng-model="otp.firstDigit" class="otp-input" move-next-on-maxlength  style="width:50px!important;height:60px!important"  maxlength="1"   ng-pattern="/^[0-9]{1}$/" required />
+           <input type="text" id="opt2" name="opt2"  ng-model="otp.secondDigit" class="otp-input" move-next-on-maxlength style="width:50px!important;height:60px!important"  maxlength="1"  ng-pattern="/^[0-9]{1}$/" required />
+	       <input type="text" id="opt3" name="opt3"  ng-model="otp.thirdDigit" class="otp-input" move-next-on-maxlength style="width:50px!important;height:60px!important"  maxlength="1" ng-pattern="/^[0-9]{1}$/"  required />
+	       <input type="text" id="opt4" name="opt4" ng-model="otp.fourthDigit" class="otp-input"  move-next-on-maxlength style="width:50px!important;height:60px!important"  maxlength="1"  ng-pattern="/^[0-9]{1}$/" required />
+            <input type="text" id="opt5" name="opt5"  ng-model="otp.fifthDigit" class="otp-input"move-next-on-maxlength  style="width:50px!important;height:60px!important"  maxlength="1"   ng-pattern="/^[0-9]{1}$/" required />
+	        <input type="text" id="opt6" name="opt6" ng-model="otp.sixDigit" class="otp-input" move-next-on-maxlength  style="width:50px!important;height:60px!important"  maxlength="1" ng-pattern="/^[0-9]{1}$/" required />
+          </div>
+		
+		
+		  <div class="help-block " ng-show="OTPForm.opt1.$dirty && OTPForm.opt1.$invalid">
+                <span class="text-danger" ng-show="OTPForm.opt1.$error.required">OTP is required</span>
+				   <span class="text-danger" ng-show="OTPForm.opt1.$error.pattern">OTP is invalid</span>
+            </div>
+		 </div>
+          <button type="submit" class="btn btn-block btn-primary pt-10" ng-click="OTPForm.$valid && verifyLoginOtpToken()"
+                    ng-disabled="OTPForm.$invalid"  disable-double-click >Validate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

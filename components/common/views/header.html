@@ -1,0 +1,279 @@
+<style>
+.card-customnew{
+width: 90px;
+}
+</style>
+
+<div class="top-header clearfix"> 
+  
+  <!-- Logo -->
+  <div class="logo {{admin.navbarlogo}} ">
+    <div class="logo-title "><i class="fa fa-headset ph-5"></i>My Login<strong></strong></div>
+  </div>
+  
+  <!-- needs to be put after logo to make it working-->
+  <div class="menu-button" toggle-off-canvas> <a href="javascript:void(0)" alt=""> <i class="fa fa-fw fa-outdent "></i> </a> </div>
+
+  <div class="top-nav">
+    <ul class="nav-left list-unstyled">
+     <li> <a href="javascript:void(0)" class="toggle-min" id="step3" data-toggle-nav-collapsed-min><i class="fa fa-bars"></i></a> </li>     	    
+    </ul>
+    <ul class="nav-right pull-right list-unstyled">
+	
+	
+
+	<!--<li class="dropdown" uib-dropdown ui-not-close-on-click> <a href="javascript:void(0)" ng-controller="AppCtrl" ng-click="getDashboardApp()" uib-dropdown-toggle  class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-clone"></i> </a>
+        <div class="dropdown-menu with-arrow pull-right panel">
+          <div class="panel-heading">   <input type="text" class="form-control" placeholder="Search App..." data-ng-model="query"> 	    </div>
+          <div class="overflow" data-slim-scroll data-scroll-height="240px">
+           
+              
+ <div class="row mt-2">
+      
+        <div class="card-customnew mx-1 mb-1" >
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-file-invoice text-success fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/invoicingapp" data-trigger="hover" target="_blank" title="Create a Multi Currency Tax invoices with integrated Payment options for your customers." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Invoicing</a>				
+				</h5>
+              </div>
+        </div>
+	
+        <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-file-alt text-danger fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/finliteapp" target="_blank" data-trigger="hover" title="Multi Currency core accounting solution to close your business finance." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Accounting</a>				
+				</h5>
+              </div>
+        </div>
+	     <div class="card-customnew mx-1 mb-1">
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-university text-amber fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/bankxapp" target="_blank" data-trigger="hover" title="Integrated banking for all your banking transaction needs across multiple banks." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Banking</a>				
+				</h5>
+              </div>
+        </div>
+		
+        <div class="card-customnew mx-1 mb-1">
+             <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-file-alt text-warning  fa-2x"></i>	</div>
+				<h5 class="card-title">
+					<a href="https://www.financeflo.com/in/expenseliteapp" target="_blank" data-trigger="hover" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Expense Management integrated with Expense &amp; Travel cards.">
+					   Expenses			
+					</a>
+				</h5>
+              </div>
+        </div>
+        <div class="card-customnew mx-1 mb-1">
+           <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-cube text-purple  fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/assetliteapp" target="_blank" data-trigger="hover" title="Assets and Depreciation Management system." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Assets</a>				
+				</h5>
+              </div>
+        </div>
+        <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-2"><i class="fas fa-cubes text-cyan  fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/inventoryliteapp" target="_blank" data-trigger="hover" title="Smart Management for your inventory and ordering." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Inventory</a>				
+				</h5>
+              </div>
+        </div>
+         <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-2"><i class="fas fa-money-bill text-lightgreen  fa-2x"></i>	</div>
+                <h5 class="card-title ">
+				<a href="https://www.financeflo.com/in/expenseliteapp" target="_blank" data-trigger="hover" title="Purchase &amp; Expense requisition management with approval workflows." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Requisition</a>				
+				</h5>
+              </div>
+        </div>
+		
+		  <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-money-check text-orange  fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Create employee payroll statements with bulk auto payouts." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Payroll</a>				
+				</h5>
+              </div>
+        </div>
+		
+		
+		  <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-coins text-brown  fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Manage &amp; control your cash flow and working capital needs.">Treasury</a>				
+				</h5>
+              </div>
+        </div>
+		
+		  <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-university text-indigo fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Project accounting and Profitability tracking." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Projects</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card-customnew mx-1 mb-1">
+              <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-balance-scale text-pink fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom" data-original-title="Manage budgets and track variance reports.">Budgets</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-chart-bar text-limelight fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="In depth insights &amp; Dashboards for data driven decision making." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Analytics</a>				
+				</h5>
+              </div>
+        </div>
+		
+		
+		 <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-percentage text-orange  fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="GST and TDS reporting and automations. " data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Tax</a>				
+				</h5>
+              </div>
+        </div>
+		
+		 <div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-book text-amber fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Audit" data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Audit</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-print text-success fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="#/" data-trigger="hover" target="_blank" title="Compliance Management as per company's act. " data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Compliance</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-3"><i class="fas fa-shield-alt text-info fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/iamliteapp" data-trigger="hover" target="_blank" title="Enhanced bank level security for your organization." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Security</a>				
+				</h5>
+              </div>
+        </div>
+		
+		<div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-cogs text-indigo fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="https://www.financeflo.com/in/myakountant" target="_blank" data-trigger="hover" title="Accounting services for your organization." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">CA Services</a>				
+				</h5>
+              </div>
+        </div>
+			<div class="card-customnew mx-1 mb-1">
+            <div class="card-body  text-center">
+			    <div class="col-auto mb-1"><i class="fas fa-cogs text-indigo fa-2x"></i>	</div>
+                <h5 class="card-title">
+				<a href="http://localhost/demoapp/#/" target="_blank" data-trigger="hover" title="demo app." data-toggle="tooltip" data-append-to-body="true" data-placement="bottom">Demo app</a>				
+				</h5>
+              </div>
+      
+    </div>
+            </div>
+          </div>
+          <div class="panel-footer"> <a href="#"></a> </div>
+        </div>
+      </li>-->
+	  
+	  <!-- <li class="dropdown" uib-dropdown ui-not-close-on-click> <a href="javascript:void(0)" uib-dropdown-toggle class="dropdown-toggle"   data-toggle="dropdown"> <i class="fa fa-building"></i> </a>
+        <div class="dropdown-menu with-arrow pull-right panel">
+         <div class="panel-heading"> <a href="javascript:void(0)">  <input type="text" class="form-control" placeholder="Search Org..." data-ng-model="query"> 	   </a> </div>
+          <div class="overflow" data-slim-scroll data-scroll-height="228px">
+            <ul class="list-group nm">
+             
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-danger"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 1 </div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-warning"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 2</div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-danger"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 3 </div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-warning"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 4</div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-success"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 5</div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-info"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small">Orgniazation 6</div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-danger"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small"> Orgniazation 7 </div>
+                </div>
+                </a> </li>
+              <li class="list-group-item"> <a href="javascript:void(0)" class="media">
+                <div class="media-left label label-danger"> <i class="fa fa-university"></i> </div>
+                <div class="media-body ph-10">
+                  <div class="text-small"> Orgniazation 8 </div>
+                </div>
+                </a> </li>
+            </ul>
+          </div>
+           <div class="panel-footer"> <a href="#"></a> </div>
+        </div>
+      </li>-->
+	  
+	  
+	 
+
+
+     <!-- <li class="hidden-xs hidden-sm" fullscreen-Mode></li>
+      <li class="dropdown langs text-normal" data-ng-controller="LangCtrl"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" > {{lang}} </a> </li>-->
+      <li class="dropdown text-normal  " uib-dropdown > <a href="javascript:void(0)"  uib-dropdown-toggle class="dropdown-toggle" data-toggle="dropdown"> 
+	    <!--<img src="images/photos/user2.png" alt="" class="img-circle img40_40">--> <span class="ph-5 " > 
+	  <i class="fa fa-university"></i> <span class="text-bold" data-i18n="{{orgName}}" ></span> <i class="fa fa-caret-down"></i></span> </a>
+        <ul class="dropdown-menu with-arrow pull-right" uib-dropdown-menu>
+          <li> <a href="javascript:void(0)">  <span class="text-bold" data-i18n="{{userName}}"></span> </a> </li>
+          <li > <a href="#/components/common/views/organization-list"> <i class="fa fa-sync"></i> <span data-i18n="Change Organization"></span> </a> </li>
+		  <li> <a href="#/components/common/views/change-password"> <i class="fa fa-lock"></i> <span data-i18n="Change Password"></span> </a> </li>
+          <li> <a href="javascript:void(0)" ng-click="logout()"> <i class="fa fa-sign-out-alt"></i> <span data-i18n="Log Out"></span> </a> </li>
+        </ul>
+      </li>
+    
+    </ul>
+  </div>
+</div>

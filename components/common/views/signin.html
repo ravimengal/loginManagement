@@ -1,0 +1,52 @@
+
+
+
+<!-- login header 
+<header data-ng-controller="HeaderCtrl" data-ng-include=" 'components/common/views/login-header.html' " id="login-header" class="header-container {{admin.navbarHeaderColor}}" > </header>-->
+
+<div cg-busy="promise" class="lock-wrapper" ng-controller="LoginController" style="top:10%; ">
+  <div class="panel lock-box"> 
+    <h4> Log in and Track your Service</h4>
+    <p class="text-center"></p>
+    <div class="row">
+      <form role="form" name="loginform" novalidate ng-submit='loginform.$valid && login()' class="form-inline form-validation" >
+        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+
+          <div class="iconic-input right" >
+            <label for="signinInputEmail"  class="text-muted">LoginID</label>			
+            <input id="signinInputEmail"  name="signinInputEmail" type="email" ng-model="email" placeholder="Enter login id" ng-trim="true" maxlength="100"
+						 validate-email-mobile-custom-name ng-set-focus="signinInputEmail" set-focus-default class="form-control padding-horizontal-15" required />
+            <i class="fa fa-envelope"></i>
+			
+			<div class="help-block " ng-show="loginform.signinInputEmail.$dirty && loginform.signinInputEmail.$invalid">
+                <span class="text-danger" ng-show="loginform.signinInputEmail.$error.required">LoginID is required</span>
+				   <span class="text-danger" ng-show="loginform.signinInputEmail.$error.email">LoginID is invalid</span>
+            </div>
+			
+		   </div>	 
+		
+			
+            <div class="iconic-input right" >
+              <label for="signinInputPassword" class="text-muted">Password</label>
+              <input  id='signinInputPassword' name="signinInputPassword" ng-model="password" type="password" placeholder="Password" class="form-control lock-input" ng-trim="true" required />
+              <i class="fa fa-lock"></i> 
+			</div>
+		
+			 <div class="help-block" ng-show="loginform.signinInputPassword.$dirty && loginform.signinInputPassword.$invalid">
+                <span class="text-danger" ng-show="loginform.signinInputPassword.$error.required">Password is required.</span>
+            </div>
+			
+			  
+        
+          <button class="btn btn-block btn-primary" disable-double-click ng-disabled="loginform.$invalid">Sign In</button>
+        </div>
+				 
+      </form>
+    </div>
+	<p class="google-seperator m-lg-top-bottom"><span>or</span></p>
+	  	   <google-sign-in-button button-id="uniqueid" options="options" ng-click="updateSocialFlag()" ></google-sign-in-button>
+		 
+  </div>
+  <div class="registration"> Get New password ! <a href="#/components/common/views/forgot-password"> <span class="text-primary"> Get New Password</span> </a> </div>
+</div>
+
